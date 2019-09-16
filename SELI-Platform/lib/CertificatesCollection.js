@@ -1,0 +1,1 @@
+export const Certificates = new Mongo.Collection('certificates');
