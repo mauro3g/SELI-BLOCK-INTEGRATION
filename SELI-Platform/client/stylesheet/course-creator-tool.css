@@ -1,0 +1,328 @@
+.course-creator-container {
+  width: 100%;
+  height: auto;
+  animation: fadeIn 1s;
+}
+
+.MuiMenuItem-root {
+  min-height: auto !important;
+}
+
+.MuiList-padding {
+
+}
+
+.MuiMenuItem-gutters {
+  padding-right: 4px !important;
+}
+
+.course-creator-work-area {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  position: relative;
+  height: calc(
+    100vh -
+    (
+      var(--app-bar-height) +
+      var(--form-stepper-height) +
+      2px
+    )
+  );
+}
+
+.course-creator-drop-area {
+  width: calc(100vw - var(--course-tool-menu-size));
+  overflow-y: scroll;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: center;
+}
+
+.course-creator-menu-area {
+  width: var(--course-tool-menu-size);
+  height: calc(
+    100vh -
+    (
+      var(--app-bar-height) +
+      var(--form-stepper-height) +
+      2px
+    )
+  );
+  position: fixed;
+  right: 0;
+  background-color: #f5f5f5;
+}
+
+.unit-actions-button-container {
+  width: calc(var(--course-tool-menu-size));
+  display: flex;
+  height: 100%;
+  padding: 0.25vh 0;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+
+.new-tool-button {
+  max-height: 100% !important;
+  padding: 0 1vw !important;
+}
+
+.bottom-navigation-container {
+  bottom: 0px !important;
+  position: absolute !important;
+  width: var(--course-tool-menu-size) !important;
+  background-color: transparent !important;
+}
+
+.bottom-menu-option {
+  border-top: solid 0.5px !important;
+}
+
+.course-creator-menu-row {
+  width: 100%;
+  height: calc(var(--course-tool-menu-size) / 3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.course-creator-menu-option {
+  width: calc(var(--course-tool-menu-size) / 3);
+  height: 100%;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.course-creator-menu-option:hover {
+  cursor: grab;
+  opacity: 1;
+  background-color: #cfd8dc;
+}
+
+.course-creator-menu-option:hover .course-creator-menu-icon {
+  fill: var(--primary);
+}
+
+.course-creator-menu-option:hover .course-creator-menu-text{
+  color: var(--primary);
+}
+
+.course-creator-menu-icon {
+  fill: #333;
+  transition: 0.5s;
+}
+
+.course-creator-menu-option-row {
+  width: 100%;
+  height: calc((var(--course-tool-menu-size) / 3) - 1.8em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-creator-menu-text {
+  font-size: 0.75em;
+  text-align: center;
+  width: 100%;
+  user-select: none;
+  padding-bottom: 1vh;
+  transition: 0.5s;
+}
+
+.h5p-logo {
+  width: 100%;
+  height: calc((var(--course-tool-menu-size) / 3) - 1.8em);
+  background-image: url(H5P_Logo-g3.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: calc(100% / 2) calc(((var(--course-tool-menu-size) / 3) - 1.8em) / 8);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.check-button {
+  margin-left: 1vw !important;
+  font-size: 0.8em !important;
+  padding: 0.5vh 0.5vw !important;
+}
+
+.course-creator-menu-container {
+  width: 100%;
+  background-color: #e0e0e0 !important;
+  height: auto !important;
+}
+
+.course-creator-tab {
+  padding-top: 2.5vh !important;
+  padding-bottom: 2.5vh !important;
+  border-bottom: solid 1px #333 !important;
+  transition: 0.5s;
+}
+
+.course-creator-menu-actions-container {
+
+}
+
+.course-creator-menu-action {
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-creator-menu-action-text {
+  text-align: center !important;
+  text-transform: uppercase;
+  letter-spacing: 1px !important;
+  color: #616161;
+  font-size: 0.9em !important;
+}
+
+.course-creator-menu-action-text .MuiListItemText-primary {
+  font-size: 0.85em !important;
+}
+
+.course-creator-units-container {
+  width: 100%;
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+.course-creator-unit-container {
+  transition: 0.5s;
+  border-left: solid 3px #e0e0e0;
+}
+
+.course-creator-unit-container:hover {
+  background-color: #f5f5f5;
+}
+
+.course-creator-selected-unit-container {
+  border-left: solid 3px var(--primary);
+  transition: 0.5s;
+}
+
+.course-creator-selected-unit-container:hover {
+  background-color: #f5f5f5;
+}
+
+.course-creator-unit-list-item {
+  width: 100%;
+  padding-top: 1.5vh !important;
+  padding-bottom: 1.5vh !important;
+  animation: fadeInDown 0.5s;
+}
+
+.course-creator-unit-list-text {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.course-creator-unit-list-text .MuiListItemText-primary {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  font-size: 0.8em !important;
+}
+
+.course-creator-unit-list-text .MuiTypography-colorTextSecondary {
+  padding-top: 0 !important;
+  padding-bottom: 4px !important;
+  margin: 0 0 !important;
+  font-size: 0.75em !important;
+}
+
+.course-creator-lesson-list-text .MuiTypography-colorTextSecondary {
+  padding-top: 0 !important;
+  padding-bottom: 4px !important;
+  margin: 0 0 !important;
+  font-size: 0.75em !important;
+}
+
+.course-creator-unit-lesson-text {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.course-creator-lesson-list-text .MuiListItemText-primary {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  font-size: 0.8em !important;
+  padding-left: 1vw !important;
+}
+
+.course-creator-lesson-list-text .MuiTypography-colorTextSecondary {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 0 !important;
+  font-size: 0.75em !important;
+  padding-left: 1vw !important;
+}
+
+.course-creator-lessons-container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.course-creator-navigation-actions {
+  width: 100%;
+}
+
+.course-creator-lesson-container {
+
+}
+
+.course-creator-navigation-button {
+  letter-spacing: 1px !important;
+  border-radius: 0 !important;
+}
+
+.course-creator-unit-action {
+  font-size: 0.75em !important;
+  letter-spacing: 1px !important;
+  border-radius: 0 !important;
+}
+
+.course-creator-lesson-list-icon {
+  padding: 0px !important;
+  fill: #757575 !important;
+}
+
+.course-creator-lesson-list-button {
+  padding: 6px !important;
+}
+
+.course-creator-lesson-list-message {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1vh 0;
+}
+
+.smooth-dnd-container.horizontal {
+  display: flex !important;
+  flex-wrap: wrap;
+  height: auto;
+}
+.menu-options-container {
+  animation: fadeInRight 0.25s;
+}
+
+.dialog .MuiPaper-root {
+  max-height: 100vh !important;
+}
+
+.MuiFab-extended {
+  width: 48px !important;
+}

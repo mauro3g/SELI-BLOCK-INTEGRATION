@@ -1,0 +1,25 @@
+.language-container {
+  width: auto;
+  height: auto;
+  z-index: 9999 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#language-select-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary);
+}
+
+#select-language {
+  width: 500px;
+}
+
+#language-selector-button {
+  color: #FFF !important;
+  font-size: 0.8em !important;
+  margin: 0 0.5vw !important;
+}

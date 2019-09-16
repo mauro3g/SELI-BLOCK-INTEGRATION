@@ -1,0 +1,71 @@
+.sign-title {
+  text-transform: uppercase !important;
+  text-align: center !important;
+  background-color: #f5f5f5;
+}
+
+.sign-form {
+  width: 350px;
+  height: auto;
+  padding: 1vw;
+}
+
+.sign-form-container {
+  animation: fadeIn 0.5s;
+}
+
+.signin-input input {
+  text-align: center !important;
+}
+
+.helper-signin-input input {
+  text-align: center !important;
+}
+
+.helper-signin-input {
+  margin-bottom: 8px;
+}
+
+.sign-buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3.5vh;
+}
+
+.sign-button {
+  padding: 0.75vh 1.95vw !important;
+  letter-spacing: 2px !important;
+  margin: 0 0.5vw !important;
+}
+
+.sign-actions {
+  justify-content: center !important;
+  padding-bottom: 2vh !important;
+  background-color: #fafafa;
+}
+
+.helper-progress {
+  margin-top: 1vh !important;
+}
+
+.form-helper-container {
+  margin-top: 1vh !important;
+  animation: fadeInLeft 0.5s;
+}
+
+.MuiFormHelperText-contained {
+  display: contents !important;
+}
+
+.success-helper-text {
+  color: #4caf50 !important;
+}
+
+.error-helper-text {
+  color: #f44336 !important;
+}
+
+.MuiDialog-paperScrollPaper {
+  max-height: calc(100% - 10px) !important;
+}

@@ -1,0 +1,93 @@
+/* Declare the main variables of seli theme */
+
+:root {
+  /* Colors */
+  --primary: #0288d1;
+  --secondary: #00897b;
+  --normal-text: #333333;
+  --white: #FFFFFF;
+
+ /* AppBar */
+  --app-bar-height: 65px;
+  --app-bar-color: #202020;
+  --bar-font-color: #FFFFFF;
+
+  /* Menu */
+  --menu-color: #09090C;
+  --menu-size: 40px;
+  --cross-size: 30px;
+  --menu-font-size: 1.25em;
+  --option-font-size: 0.8em;
+  --sub-option-font-size: 0.7em;
+  --menu-hover: #17202A;
+  --menu-indent: 2vw;
+
+  /* Presentation */
+  --slider-progress-size: 15px;
+
+  /* Languages */
+  --languages-margin: 34px;
+
+  /* Forms */
+  --form-subtitle: 1.0em;
+  --form-title-background: #D6EAF8;
+  --preview-color: #F2F3F4;
+  --input-list-size: 0.9em;
+  --input-list-border: #D7DBDD;
+  --form-title-height: 45px;
+
+  /* Scroll */
+  --scroll-up-size: 50px;
+  --scroll-margin: 2.5vw;
+
+  /* Course navigation */
+  --course-navigation-width: 17.5vw;
+  --course-navigation-height: 25vh;
+  --course-navigation-margin: 2.5vw;
+  --navigation-title-size: 0.9em;
+  --main-navigation-title-size: 1.1em;
+
+  /* Steps */
+  --step-size: 0.85em;
+  --step-key-size: 20px;
+  --key-font-size: 0.75em;
+  --disabled-color: #bdbdbd;
+  --navigation-color:  #e0e0e0;
+
+  /* Picker */
+  --color1: #0288d1;
+  --color2: #e53935;
+  --color3: #ffa000;
+  --color4: #03a9f4;
+  --color5: #673ab7;
+  --color6: #009688;
+
+  /* Registry */
+  --registry-color: #eceff1;
+
+  /* Authoring Tool */
+  --course-tool-menu-size: 250px;
+  --menu-item-width: 40px;
+
+  /* Stepper */
+  --form-stepper-height: 67.5px;
+
+  /* Forms */
+  --file-column-width: 550px;
+  --list-height: 60vh;
+  --progress-size: 4.25vw;
+  --unity-form: 40vw;
+  --preview-action-container: 60px;
+  --preview-text: 1.25em;
+
+  /* Cards */
+  --image-card-width: 15vw;
+  --image-card-height: 19vh;
+  --video-card-width: 30vw;
+  --video-card-height: 38vh;
+  --audio-card-height: 15vh;
+  --audio-card-width: 20vw;
+  --pdf-card-width: 65vw;
+  --pdf-card-height: 12vh;
+  --card-buttons: 40px;
+}

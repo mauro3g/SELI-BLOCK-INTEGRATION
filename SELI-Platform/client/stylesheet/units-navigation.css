@@ -1,0 +1,33 @@
+.units-navigation-container {
+  width: var(--course-navigation-width);
+  position: relative;
+  padding-top: 0.5vh;
+  z-index: 207;
+}
+
+.units-list {
+  overflow-y: scroll;
+  max-height: 42vh;
+  overflow-x: hidden;
+}
+
+.unit-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--step-size);
+  margin: 1.25vh 4px;
+  animation: fadeInLeft 0.5s;
+  transition: 0.5s;
+}
+
+.unit-container:hover {
+  cursor: pointer;
+  filter: brightness(1.15);
+}
+
+.unit-container:hover p.step-title {
+  text-indent: 0.25vw;
+}

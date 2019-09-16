@@ -1,0 +1,160 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: var(--menu-size);
+  height: var(--menu-size);
+  margin-left: 1vw;
+  position: fixed;
+  top: calc( ( var(--app-bar-height) - var(--menu-size) ) / 2 );
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: var(--cross-size);
+  width: var(--cross-size);
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: var(--white);
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--menu-color);
+  font-size: var(--menu-font-size);
+  overflow-y: scroll;
+  overflow-x: hidden !important;
+}
+
+.bm-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.bm-menu::-webkit-scrollbar-track {
+  background: #424242;
+}
+
+/* Handle */
+.bm-menu::-webkit-scrollbar-thumb {
+  background: #212121;
+  transition: 0.5s;
+}
+
+/* Handle on hover */
+.bm-menu::-webkit-scrollbar-thumb:hover {
+  background: #1C2833;
+  cursor: pointer;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #FFF;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: var(--white);
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  outline: none;
+  user-select: none;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#outer-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-title {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-top: 7.5vh;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.menu-title:hover {
+  cursor: pointer;
+}
+
+.options-container {
+  width: 100%;
+  height: auto;
+  margin-top: 5vh;
+}
+
+.menu-expansion-panel {
+  color: #FFF !important;
+  font-family: 'Lato', sans-serif !important;
+  background-color: var(--menu-color) !important;
+}
+
+.menu-expansion-summary {
+  padding: 0 !important;
+  background-color: var(--menu-color) !important;
+  color: #FFF;
+}
+
+.MuiExpansionPanelDetails-root {
+  padding: 0 !important;
+}
+
+.menu-option {
+  text-indent: 1vw !important;
+}
+
+.sub-menu-container {
+  background-color: var(--menu-color);
+}
+
+.menu-expand-more-icon {
+  fill: var(--white) !important;
+}
+
+.MuiIconButton-edgeEnd {
+  margin-right: 0 !important;
+}
+
+.sub-menu-option {
+  display: flex;
+  width: 300px;
+  height: auto;
+  text-indent: var(--menu-indent);
+  transition: 0.5s;
+  padding: 2vh 0;
+  font-size: var(--sub-option-font-size);
+  background-color: var(--menu-color);
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Lato', sans-serif !important;
+}
+
+.sub-menu-option:hover {
+  cursor: pointer;
+  background-color: var(--menu-hover);
+  text-indent: calc(var(--menu-indent) + 0.5vw);
+}

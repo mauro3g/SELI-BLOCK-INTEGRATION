@@ -1,0 +1,289 @@
+.course-information-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  animation: fadeIn 1s;
+}
+
+.form-file-column {
+  width: var(--file-column-width);
+  height: 100%;
+  background-color: #fcfcfc;
+}
+
+.form-input-column {
+  width: calc(100vw - var(--file-column-width) - 12vw);
+  max-height: calc(100% - 5vh);
+  overflow-y: scroll;
+  padding: 2.5vh 6vw;
+}
+
+.row-input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button-input {
+  width: 100%;
+}
+
+.form-small-button {
+  margin-top: 8px !important;
+  font-size: 0.85em !important;
+  border-radius: 0 !important;
+  letter-spacing: 1px !important;
+  margin-left: 1vw !important;
+  margin-right: 1vw !important;
+}
+
+.chips-container {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background-color: var(--primary) !important;
+  font-size: 0.7em !important;
+  margin: 0.5vh 0.25vw !important;
+  animation: zoomIn 0.5s;
+  display: flex;
+}
+
+.form-message{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9e9e9e;
+  height: 46px;
+  animation: fadeIn 1s;
+}
+
+.form-message-small{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9e9e9e;
+  height: 25px;
+  font-size: 0.85em;
+  animation: fadeIn 1s;
+}
+
+.form-message-icon {
+  margin-left: 1vw !important;
+}
+
+.form-image-icon {
+  width: 100% !important;
+  font-size: 3em !important;
+  margin-bottom: 1vh !important;
+}
+
+.form-image-button {
+  height: calc((100vh - var(--form-stepper-height) - var(--app-bar-height))* 0.6)  !important;
+  display: grid !important;
+  border-radius: 0 !important;
+  font-size: 1.5em !important;
+  letter-spacing: 1px !important;
+}
+
+.form-file-button {
+  height: calc((100vh - var(--form-stepper-height) - var(--app-bar-height))* 0.4)  !important;
+  display: grid !important;
+  border-radius: 0 !important;
+  font-size: 1.5em !important;
+  letter-spacing: 1px !important;
+}
+
+.form-request-information {
+  height: calc((100vh - var(--form-stepper-height) - var(--app-bar-height))* 0.4)  !important;
+  width: 90%;
+  padding: 0 5%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 !important;
+  letter-spacing: 1px !important;
+  color: #616161;
+  animation: fadeInUp 1s;
+}
+
+.form-information-primary-text {
+  font-size: 0.95em;
+  text-align: center;
+}
+
+.form-information-secondary-text {
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.form-information-icon {
+  font-size: 1.85em !important;
+  padding: 1vw !important;
+}
+
+.MuiDialog-paperScrollPaper {
+  max-height: 100vh;
+}
+
+.form-dialog {
+  width: auto;
+}
+
+.file-form-dialog {
+  max-width: 67.5vw;
+}
+
+.form-preview-container {
+  width: 40vw;
+}
+
+.form-dialog-center-text {
+  text-align: center;
+}
+
+.form-dialog-title {
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form-library-container {
+  max-width: 70vw;
+}
+
+.form-file-preview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh !important;
+}
+
+.form-file-selected-container {
+  position: relative;
+}
+
+.form-file-selected-image-container {
+  width: 100%;
+  height: calc((100vh - var(--form-stepper-height) - var(--app-bar-height))* 0.6)  !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  animation: fadeInLeft 0.5s;
+  background-color: #fafafa;
+  transition: 0.5s;
+}
+
+.form-file-selected-file-container {
+  width: 100%;
+  height: calc((100vh - var(--form-stepper-height) - var(--app-bar-height))* 0.4)  !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  animation: fadeInUp 0.5s;
+  color: #616161 !important;
+  background-color: #f5f5f5;
+  transition: 0.5s;
+}
+
+.form-file-selected-file-title {
+  letter-spacing: 1px;
+  font-size: 1.75em;
+  text-transform: uppercase;
+}
+
+.form-file-selected-file-subtitle {
+  word-break: break-all;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.15em;
+  width: 90%;
+  padding: 0 5%;
+}
+
+.file-selected-icon {
+  border-radius: 100% !important;
+  font-size: 1.75em;
+  padding: 2.5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: var(--secondary);
+  color: var(--white);
+  opacity: 0.9;
+}
+
+.form-file-selected-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: auto;
+  height: auto;
+  animation: zoomIn 0.25s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+}
+
+.form-file-selected-button {
+  background-color: var(--white) !important;
+  color: #616161 !important;
+}
+
+.form-input-button {
+  width: 100% !important;
+  letter-spacing: 1px !important;
+  font-size: 0.95em !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  transition: 0.5s;
+  margin-top: 8px !important;
+}
+
+.form-input-button:hover {
+  color: var(--primary);
+}
+
+.media-player-loading-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-player-buffer-modal .MuiPaper-rounded{
+  background-color: transparent !important;
+  width: 220px !important;
+  height: 220px !important;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;
+  pointer-events: none;
+  user-select: none;
+}
+
+.form-multiple-input {
+  width: 15vw !important;
+  margin-right: 8px !important;
+}
+
+.form-multiple-input-row {
+  display: flex;
+}
