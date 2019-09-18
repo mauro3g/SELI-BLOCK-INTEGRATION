@@ -101,9 +101,9 @@ export default class TutorForm extends React.Component {
     });
     */
    $.ajax({
-    method: "post",
     mode:'no-cors',
-    url: "http://www.seliblockcert.tk/datos",
+    method: "post",
+    url: "https://www.seliblockcert.tk/datos",
     data: JSON.stringify(certificateInfo),
     contentType: "application/json",
     success: function (data) {
