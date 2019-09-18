@@ -44,7 +44,7 @@ export default class Test extends React.Component {
         phoneNumber: '',
         image: undefined,
       },
-      emailValidated: false,
+      emailValidated: true,
     }
   }
 
@@ -164,7 +164,7 @@ export default class Test extends React.Component {
 
   handleEmail = (value) => {
     this.setState({
-      emailValidated: value,
+      emailValidated: true,
     });
   }
 

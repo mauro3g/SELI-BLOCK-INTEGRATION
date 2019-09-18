@@ -67,6 +67,16 @@ var OPTIONS = [
       },
     ],
   },
+  {
+    _id: 5,
+    label: "Certificates",
+    suboptions: [
+      {
+        _id: 1,
+        label: "Certificates management",
+      },
+    ],
+  },
 ]
 
 export default OPTIONS;
