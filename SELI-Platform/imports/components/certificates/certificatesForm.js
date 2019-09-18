@@ -87,7 +87,7 @@ export default class TutorForm extends React.Component {
         console.log(myJson);
       }
 */
-    /*fetch('http://localhost:3000/certificate-result', {
+   /* fetch('http://localhost:3000/certificate-result', {
       mode:'no-cors',
       method: "POST",
       body: {
@@ -95,12 +95,15 @@ export default class TutorForm extends React.Component {
         certificateHash:'asdas123',
       },
       headers: {
+        'Accept': 'application/json',
         'Content-Type': 'application/json',
         //'Access-Control-Allow-Origin': '*'
       }
-    });
+    }).then(function(res){ console.log(res) })
+    .catch(function(res){ console.log(res) });
     */
-   $.ajax({
+
+   /*$.ajax({
     mode:'no-cors',
     method: "post",
     url: "http://www.seliblockcert.tk/datos",
@@ -109,7 +112,17 @@ export default class TutorForm extends React.Component {
     success: function (data) {
       console.log(data); // 6
     }
-  });
+  });*/
+
+  fetch('http://www.seliblockcert.tk/datos', {
+  method: 'post',
+  headers: {
+    'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(certificateInfo)
+}).then(res=>res.json())
+  .then(res => console.log(res));
 
   }
 
