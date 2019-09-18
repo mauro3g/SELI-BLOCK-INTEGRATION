@@ -114,7 +114,7 @@ export default class TutorForm extends React.Component {
     }
   });*/
 
-  fetch('http://www.seliblockcert.tk/datos', {
+  fetch('https://www.seliblockcert.tk/datos', {
   method: 'post',
   headers: {
     'Accept': 'application/json, text/plain, */*',
