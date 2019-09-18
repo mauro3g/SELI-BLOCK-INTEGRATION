@@ -87,7 +87,6 @@ export default class TutorForm extends React.Component {
         console.log(myJson);
       }
 */
-    console.log('yes')  
     /*fetch('http://localhost:3000/certificate-result', {
       mode:'no-cors',
       method: "POST",
