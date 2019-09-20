@@ -56,76 +56,22 @@ export default class TutorForm extends React.Component {
         duration: duration,
         certificateNumber: certificateNumber.toString(),
     };
-    console.log(idStudent, certificateNumber);
-    console.log(certificateInfo);
+
     this.sendCertificate(certificateInfo);
   }
 
   sendCertificate(certificateInfo){
-    /*const certificateRest = async () => {
-        const response = await fetch('https://seli-blockchain-int-test.herokuapp.com/certificate-result', {
-          method: 'POST',
-          body: {certificateNumber:2024,certificateHash:"asdas123"}, // string or object
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        });
-        const myJson = await response.json(); //extract JSON from the http response
-        // do something with myJson
-        console.log(myJson);
-      }*/
+    fetch('https://www.seliblockcert.tk/datos', {
+    method: 'post',
+    headers: {
+      'Accept': 'application/json, text/plain, */*',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(certificateInfo)
+    }).then(res=>res.json())
+      .then(res => console.log(res));
 
-   /* const certificateRest = async () => {
-        const response = await fetch('http://www.seliblockcert.tk/datos', {
-          method: 'POST',
-          body: certificateInfo, // string or object
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        });
-        const myJson = await response.json(); //extract JSON from the http response
-        // do something with myJson
-        console.log(myJson);
-      }
-*/
-   /* fetch('http://localhost:3000/certificate-result', {
-      mode:'no-cors',
-      method: "POST",
-      body: {
-        certificateNumber:2023,
-        certificateHash:'asdas123',
-      },
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        //'Access-Control-Allow-Origin': '*'
-      }
-    }).then(function(res){ console.log(res) })
-    .catch(function(res){ console.log(res) });
-    */
-
-   /*$.ajax({
-    mode:'no-cors',
-    method: "post",
-    url: "http://www.seliblockcert.tk/datos",
-    data: JSON.stringify(certificateInfo),
-    contentType: "application/json",
-    success: function (data) {
-      console.log(data); // 6
     }
-  });*/
-
-  fetch('https://www.seliblockcert.tk/datos', {
-  method: 'post',
-  headers: {
-    'Accept': 'application/json, text/plain, */*',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify(certificateInfo)
-}).then(res=>res.json())
-  .then(res => console.log(res));
-
-  }
 
 
   getImageInformation(url, id){
