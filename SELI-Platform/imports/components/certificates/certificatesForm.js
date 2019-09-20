@@ -48,7 +48,7 @@ export default class TutorForm extends React.Component {
     let certificateNumber = Math.floor(Math.random()*(1000-500))+500;
     let certificateInfo = {
         idStudent: idStudent.toString(),
-        student: student,
+        name: student,
         tutor: tutor,
         date: date,
         course: course,
@@ -56,7 +56,8 @@ export default class TutorForm extends React.Component {
         duration: duration,
         certificateNumber: certificateNumber.toString(),
     };
-    //console.log(idStudent, certificateNumber);
+    console.log(idStudent, certificateNumber);
+    console.log(certificateInfo);
     this.sendCertificate(certificateInfo);
   }
 
